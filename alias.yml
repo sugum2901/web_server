@@ -7,4 +7,4 @@
         src: index.j2
         dest: /var/www/html/index.html
       notify: 
-        restart_service
+        - restart_service
