@@ -6,11 +6,3 @@
       ansible.builtin.template:
         src: index.j2
         dest: /var/www/html/index.html
-      notify: 
-        restart_service
-  handlers:
-    - name: restart the httpd service
-      ansible.builtin.service:
-        name: httpd
-        state: restarted
-        enabled: yes
