@@ -2,15 +2,3 @@
 - name: Webserver content config
   hosts: dev
   tasks: 
-    - name: Change content in webpage
-      ansible.builtin.template:
-        src: index.j2
-        dest: /var/www/html/index.html
-      notify:
-        restart_service
-  handlers:
-    - name: restart_service
-      ansible.builtin.service:
-        name: httpd
-        state: restarted
-        enabled: yes
