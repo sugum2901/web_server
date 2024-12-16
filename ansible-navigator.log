@@ -1,0 +1,2 @@
+2024-12-16T10:45:18.814267+00:00 WARNING 'ansible_navigator.image_manager.puller._log_message' Image inspection failed, image assumed to be corrupted or missing
+2024-12-16T10:45:20.538638+00:00 ERROR 'ansible_navigator.image_manager.puller._log_message' Execution environment pull failed
